@@ -29,7 +29,7 @@ class excel:
         # sheet = workbook.sheet_names('sheet1')
 
         # sheet的名称，行数，列数
-        print(sheet.name, sheet.nrows, sheet.ncols)
+        # print(sheet.name, sheet.nrows, sheet.ncols)
 
         # 获取整行和整列的值（数组）
         try:
@@ -52,4 +52,6 @@ class excel:
 if __name__ == '__main__':
     a = excel()
     for i in range(5):
+        if a.read_excel(i)==False:
+            break
         print(a.read_excel(i))
