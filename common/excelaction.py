@@ -6,9 +6,10 @@ import os
 flag = True
 fname = ''
 
+
 class excel:
     def read_excel(self, row):
-        global flag,fname
+        global flag, fname
         try:
             # 文件对话框
             if flag:
@@ -52,6 +53,6 @@ class excel:
 if __name__ == '__main__':
     a = excel()
     for i in range(5):
-        if a.read_excel(i)==False:
+        if a.read_excel(i) == False:
             break
         print(a.read_excel(i))
